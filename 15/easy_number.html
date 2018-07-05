@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <script>
+    "use strict"
+    var i,j;
+    var flag;
+    for (i=2; i<=10; i++){
+        flag = true;
+        for (j=2; j<i; j++){
+            if (i%j == 0) flag = false;
+        }
+        if (flag == true) alert (i);
+    }
+    
+  </script>
+</body>
+
+</html>
