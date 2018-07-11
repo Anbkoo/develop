@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function isEmpty(obj) {
+        var counter = 0; 
+        for (var key in schedule){
+            return false;
+        }
+        return true;
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    var schedule  = {};
+    alert(isEmpty(schedule));
+    schedule["8:30"] = "подъём";
+    alert(isEmpty(schedule));
+  </script>
+</body>
+
+</html>
