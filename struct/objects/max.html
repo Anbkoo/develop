@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function isEmpty(obj) {
+        var counter = 0;
+        for (var key in salaries){
+            counter ++;
+        }
+
+        if (counter > 0 ){
+            var max=0, name;
+            for (var key in salaries){
+                if (max<salaries[key]) {
+                    max = salaries[key];
+                    name = key; 
+                }
+            }
+            return alert (name);
+        }
+        else return alert ("нет сотрудников");
+    }
+  </script>
+</head>
+
+<body>
+    <script>
+    "use strict";
+    var salaries = {
+        "Вася": 100,
+        "Петя": 300,
+        "Даша": 250
+    };
+    isEmpty(salaries);
+  </script>
+</body>
+
+</html>
