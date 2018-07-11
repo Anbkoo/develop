@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n)
+    }
+    function multiplyNumeric(obj){
+        for (key in menu){
+           if ( isNumeric(menu[key]) == true ){
+               menu[key] = menu[key]*2;
+               alert (menu[key]);
+           }
+           else alert (menu[key]);
+        }
+    }
+
+  </script>
+</head>
+
+<body>
+    <script>
+    "use strict";
+    var menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+
+    multiplyNumeric(menu);
+  </script>
+</body>
+
+</html>
