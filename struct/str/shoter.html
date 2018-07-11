@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function truncate(str,maxlength) {
+        if (str.length > maxlength) 
+            return str.substring(0,maxlength-3) + "...";
+        else return str;
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    alert (truncate("Вот, что мне хотелось бы сказать на эту тему:", 
+20));
+    alert (truncate("Всем привет!", 20));
+  </script>
+</body>
+
+</html>
