@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function getDateAgo(date, days){
+        var data = new Date (date);
+        var d = data.getDate() - days;
+        data.setDate(d);
+        return data.getDate();
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    var date = new Date(2015, 0, 2);
+    alert( getDateAgo(date, 1) ); 
+    alert( getDateAgo(date, 2) ); 
+    alert( getDateAgo(date, 365) );
+  </script>
+</body>
+
+</html>
