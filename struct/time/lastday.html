@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function getLastDayOfMonth(year, month){
+        var date = new Date (year , month);
+        date.setMonth(month+1);
+        date.setDate (date.getDate()-1);
+        return alert (date.getDate());
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    getLastDayOfMonth(2012, 1)
+  </script>
+</body>
+
+</html>
