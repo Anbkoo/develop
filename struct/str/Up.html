@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function ucFirst(str) {
+        var strOfFirstSymbol = str.charAt(0), strUpYourSymbol = 
+strOfFirstSymbol.toUpperCase() ,  strOfElse = str.substring(1);
+        return strUpYourSymbol+strOfElse;
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    var str = prompt ("write yout stroka", "");
+    alert (ucFirst(str));
+  </script>
+</body>
+
+</html>

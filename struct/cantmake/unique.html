@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function unique(arr) {
+        var p =0, count = 0;
+        while (p < (arr.length - count )){
+            var ar = arr;
+            for (var i = 1; i < ar.length; i++){
+                if (ar [p] === ar[i]){ 
+		   arr.splice (i,1);
+		}
+            }
+            p++;
+        }
+        return  (ar);
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    var strings = ["кришна", "кришна", "харе", "харе",
+    "харе", "харе", "кришна", "кришна", "8-()"
+    ];
+    alert( unique(strings) );
+  </script>
+</body>
+
+</html>

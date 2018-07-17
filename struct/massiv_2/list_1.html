@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function printList_1(list) {
+       var tmp = list; 
+       while (tmp != null){
+           alert (tmp.value);
+           tmp = tmp.next;
+       }
+    }
+    function printlist_2 (list){
+        var tmp1 = list;
+        alert (tmp1.value);
+        if (tmp1.next != null){
+            printlist_2 (tmp1.next)
+        }
+    }
+    function printlist_3(list) {
+        var tmp = list;
+        if (tmp.next!=null) {
+            printlist_3(tmp.next);
+        }
+        alert(tmp.value );
+    }
+
+   function printlist_4(list) {
+       var tmp = list; 
+       var arr = [];
+       while (tmp != null){
+           arr.push (tmp.value);
+           tmp = tmp.next;
+       }
+       for (var i = arr.length - 1 ; i>=0 ; i--){
+           alert (arr[i]);
+       }
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+    "use strict";
+    var list = { value: 1 };
+    list.next = { value: 2 };
+    list.next.next = { value: 3 };
+    list.next.next.next = { value: 4 };
+    printList_1(list);
+    printlist_2(list);
+    printlist_3(list);
+    printlist_4(list);
+  </script>
+</body>
+
+</html>

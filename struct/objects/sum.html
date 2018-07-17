@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function isEmpty(obj) {
+        var sum=0;
+        for (var key in salaries){
+            var value = salaries[key];
+            sum = value +sum;
+        }
+        return sum;
+    }
+  </script>
+</head>
+
+<body>
+    <script>
+    "use strict";
+    var salaries = {
+        "Вася": 100,
+        "Петя": 300,
+        "Даша": 250
+    };
+    alert(isEmpty(salaries));
+  </script>
+</body>
+
+</html>

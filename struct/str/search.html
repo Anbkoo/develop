@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function checkSpam(str) {
+        var str1 = "viagra", str2 = "XXX";
+        var str3 = str.toUpperCase();
+        return 
+!!(~str3.indexOf(str2)||~str3.indexOf(str1.toUpperCase()));
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    alert (checkSpam('buy ViAgRA now'));
+    alert (checkSpam('free xxxxx'));
+    alert (checkSpam('innocent rabbit'));
+  </script>
+</body>
+
+</html>

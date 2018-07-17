@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function addClass (obj , cls){
+        var arr = obj.className.split(" ");
+        //var ar = cls.split("");
+        for (var i = 0; i< arr.length; i++){
+            if (cls === arr[i]){
+                return alert (obj.className); 
+            }
+        }
+        arr.push(cls);
+        obj.className = arr.join(' ');
+        return alert (obj.className);
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+    "use strict";
+    var obj = {
+        className: 'open menu'
+    }
+    addClass(obj, 'new'); 
+    addClass(obj, 'open'); 
+    addClass(obj, 'me'); 
+    alert( obj.className );
+  </script>
+</body>
+
+</html>

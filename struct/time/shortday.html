@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function getWeekDay(date){
+        var data = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+        var data1 = date.getDay();
+        for (var i = 0; i< data.length; i++){
+            if (data1 == i) return alert (data[i]);
+        }
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+  var date = new Date(2014, 0, 3); 
+  getWeekDay(date);
+  </script>
+</body>
+
+</html>

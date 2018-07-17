@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function isNumeric(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n)
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+  var num1 = +prompt ("write number ", "");
+  var arr = [] , sum = 0;
+  while (!(num1 === "" || num1 === null || !(isNumeric(num1)) )) {
+      arr.push = num1;
+      sum +=num1;
+      num1 = parseInt(prompt ("write number ", ""));
+  }
+  alert (sum);
+  </script>
+</body>
+
+</html>

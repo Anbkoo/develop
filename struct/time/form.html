@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function formatData(date){
+        var data = new Date (date);
+        var day = data.getDate();
+        var year = data.getFullYear()%100;
+        if (day<10){
+          day = "0" + data.getDate();
+        }
+        return day+"."+data.getMonth()+1+"."+year;
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    var date = new Date(2014, 0, 1);
+    alert (formatData(date));
+  </script>
+</body>
+
+</html>

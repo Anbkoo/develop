@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function getDecimal (num) {
+        var integerOfNumber;
+        if (num>0)  integerOfNumber = Math.floor(num);
+        else  integerOfNumber = Math.ceil(num);
+        var result = Math.abs(num-integerOfNumber);
+        return +result.toFixed(10);
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+    alert (getDecimal(12.345));
+    alert (getDecimal(1.2));
+    alert (getDecimal(-1.2));
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function compareNumeric(a, b) {
+        return Math.floor(Math.random()*2 - 1);
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+    "use strict";
+    var arr = [1, 2, 3, 4, 5];
+    arr.sort(compareNumeric);
+    alert( arr );
+  </script>
+</body>
+
+</html>
