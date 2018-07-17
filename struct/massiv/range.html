@@ -5,10 +5,12 @@
   <meta charset="utf-8">
   <script type="text/javascript"> 
     function filterRange(arr, a, b) {
-        var result = [] ;
-        for (var i=0 ; i< arr.length; i++){
-            if (arr[i]>= a && arr[i]<= b) result.push(arr[i]);
-        }
+        var result = [] , len = arr.length ;
+        for (var i=0 ; i< len; i++){
+            if (arr[i]>= a && arr[i]<= b){
+		 result.push(arr[i]);
+            }
+	}
         return alert(result); 
     }
   </script>
