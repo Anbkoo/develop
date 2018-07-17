@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript"> 
+    function aclean(arr)  {
+        var a;
+        var obj = {};
+        for (var i =0; i< arr.length; i++){
+            a = arr[i].toLowerCase().split("").sort().join("");
+            obj[a] = arr[i];
+        }
+        for (var key in obj) alert(obj[key]);
+        
+    }
+  </script>
+</head>
+
+<body>
+  <script>
+  "use strict";
+  var arr = ["воз", "киборг", "корсет", "ЗОВ", "гробик", "костер", 
+"сектор"];
+  aclean(arr);
+  </script>
+</body>
+
+</html>
