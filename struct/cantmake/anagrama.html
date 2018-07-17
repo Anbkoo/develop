@@ -11,7 +11,9 @@
             a = arr[i].toLowerCase().split("").sort().join("");
             obj[a] = arr[i];
         }
-        for (var key in obj) alert(obj[key]);
+        for (var key in obj) {
+	    alert(obj[key]);
+	}
         
     }
   </script>
