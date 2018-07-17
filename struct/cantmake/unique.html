@@ -9,7 +9,9 @@
         while (p < (arr.length - count )){
             var ar = arr;
             for (var i = 1; i < ar.length; i++){
-                if (ar [p] == ar[i]) arr.splice (i,1);
+                if (ar [p] === ar[i]){ 
+		   arr.splice (i,1);
+		}
             }
             p++;
         }
